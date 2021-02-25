@@ -4,6 +4,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import styled from "styled-components";
 import {Avatar} from "@material-ui/core";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import HelpOutLineIcon from "@material-ui/icons/HelpOutline"
 
 const Header = () => {
     return (
@@ -26,6 +27,9 @@ const Header = () => {
       
       
       {/* Header right */}
+      <HeaderRight>
+         <HelpOutLineIcon /> 
+      </HeaderRight>
     </HeaderContainer>
     )
 }
@@ -82,6 +86,17 @@ border: 1px gray solid;
   outline: 0;
   color: white;
   outline: 0;
+}
+
+`
+const HeaderRight = styled.div`
+flex: 0.3;
+display: flex;
+align-items: flex-end;
+
+>.MuiSvgIcon-root {
+  margin-left: auto;
+  margin-right: 30px;
 }
 
 `
